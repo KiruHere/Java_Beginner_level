@@ -1,0 +1,22 @@
+public class Main
+{
+    public static boolean isPali(int num){
+        int temp=num;
+        int rem=0,rev=0;
+        while(num>0){
+            rem = num%10;
+            rev=rev*10+rem;
+            num/=10;
+        }
+        return(rev==temp);
+    }
+	public static void main(String[] args) {
+	    int max=999;           //CAN CHANGE RANGE HERE 
+	    while(max>0){
+	        if(isPali(max)==true) break;
+	        else max--;
+	    }
+	    System.out.printf("The largest Palindrome is "+ max);
+
+	}
+}
