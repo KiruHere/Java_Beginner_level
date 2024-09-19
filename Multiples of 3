@@ -1,0 +1,12 @@
+public class Main
+{
+	public static void main(String[] args) {
+		int count=0;
+		for(int i=20;i<81;i++){
+		    if(i%3==0) {
+		        count++;
+		    }
+		}
+		System.out.println("The Number of Multiples of 3 Between 20 and 80 = "+count);
+	}
+}
